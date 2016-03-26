@@ -1,11 +1,11 @@
 angular.module('starter.playlists', [])
 .controller('PlaylistsCtrl', function($scope) {
   $scope.playlists = [
-    { title: 'Reggae', id: 1 },
-    { title: 'Chill', id: 2 },
-    { title: 'Dubstep', id: 3 },
-    { title: 'Indie', id: 4 },
-    { title: 'Rap', id: 5 },
-    { title: 'Cowbell', id: 6 }
+    { title: "McQueen's Big Race", id: 1 },
+    { title: 'A Hurt Arm', id: 2 },
+    { title: 'Our New Chickens', id: 3 },
+    { title: 'Why Does Uncle John Smell Funny?', id: 4 },
+    { title: 'Eat Your Vegetables', id: 5 },
+    { title: 'More Cowbell', id: 6 }
   ];
 })
