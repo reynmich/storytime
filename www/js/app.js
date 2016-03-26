@@ -7,7 +7,7 @@
 angular.module('starter', [
   'ionic',
   'starter.menu',
-  'starter.playlists',
+  'starter.myStories',
   'starter.playlist',
   'starter.about'
 ])
@@ -64,19 +64,19 @@ angular.module('starter', [
   //       }
   //     }
   //   })
-    .state('app.playlists', {
-      url: '/playlists',
+    .state('app.myStories', {
+      url: '/myStories',
       views: {
         'menuContent': {
-          templateUrl: 'templates/playlists/playlists.html',
-          controller: 'PlaylistsCtrl'
+          templateUrl: 'templates/myStories/myStories.html',
+          controller: 'MyStoriesCtrl'
         }
       }
     })
 
 
   .state('app.single', {
-    url: '/playlists/:playlistId/:playlistTitle',
+    url: '/myStories/:playlistId/:playlistTitle',
     views: {
       'menuContent': {
         templateUrl: 'templates/playlist/playlist.html',

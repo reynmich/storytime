@@ -1,6 +1,6 @@
-angular.module('starter.playlists', [])
-.controller('PlaylistsCtrl', function($scope) {
-  $scope.playlists = [
+angular.module('starter.myStories', [])
+.controller('MyStoriesCtrl', function($scope) {
+  $scope.myStories = [
     { title: "McQueen's Big Race", id: 1 },
     { title: 'A Hurt Arm', id: 2 },
     { title: 'Our New Chickens', id: 3 },
