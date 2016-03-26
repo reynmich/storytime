@@ -8,7 +8,7 @@ angular.module('starter', [
   'ionic',
   'starter.menu',
   'starter.myStories',
-  'starter.playlist',
+  'starter.story',
   'starter.about'
 ])
 
@@ -76,11 +76,11 @@ angular.module('starter', [
 
 
   .state('app.single', {
-    url: '/myStories/:playlistId/:playlistTitle',
+    url: '/myStories/:storyId/:storyTitle',
     views: {
       'menuContent': {
-        templateUrl: 'templates/playlist/playlist.html',
-        controller: 'PlaylistCtrl'
+        templateUrl: 'templates/story/story.html',
+        controller: 'StoryCtrl'
       }
     }
   });
