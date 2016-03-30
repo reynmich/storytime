@@ -33,13 +33,13 @@ angular.module('starter', [
 
   $stateProvider
   .state('app', {
-    url: '/app',
+    url: '^/app',
     abstract: true,
     templateUrl: 'templates/menu/menu.html',
     controller: 'MenuCtrl'
   })
   .state('app.about', {
-    url: '/about',
+    url: '^/about',
     views: {
       'menuContent': {
         templateUrl: 'templates/about/about.html',
@@ -66,7 +66,7 @@ angular.module('starter', [
   //     }
   //   })
     .state('app.myStories', {
-      url: '/myStories',
+      url: '^/myStories',
       views: {
         'menuContent': {
           templateUrl: 'templates/myStories/myStories.html',
@@ -77,7 +77,7 @@ angular.module('starter', [
 
 
   .state('app.single', {
-    url: '/myStories/:storyId/:storyTitle',
+    url: '^/myStories/:storyId/:storyTitle',
     views: {
       'menuContent': {
         templateUrl: 'templates/story/story.html',
@@ -86,5 +86,5 @@ angular.module('starter', [
     }
   });
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/about');
+  $urlRouterProvider.otherwise('/about');
 });
