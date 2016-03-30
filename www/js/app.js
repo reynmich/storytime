@@ -28,9 +28,10 @@ angular.module('starter', [
   });
 })
 
-.config(function($stateProvider, $urlRouterProvider) {
-  $stateProvider
+.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
+  $locationProvider.html5Mode(true);
 
+  $stateProvider
   .state('app', {
     url: '/app',
     abstract: true,
