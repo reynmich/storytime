@@ -32,7 +32,7 @@ angular.module('starter', [
 })
 
 .config(function($stateProvider, $urlRouterProvider, $locationProvider) {
-  $locationProvider.html5Mode(true);
+  // $locationProvider.html5Mode(true);
 
   $stateProvider
   .state('app', {

@@ -1,7 +1,7 @@
 angular.module('starter.myStories', [])
 .controller('MyStoriesCtrl', function($scope) {
   $scope.myStories = [
-    { title: "McQueen's Big Race", id: 1, inputs:['main','sub','superhero','villian'], story:'the {{main}} was friends with the {{sub}}, who loved the {{superhero}} and fought against the {{villian}}' },
+    { title: "Preparation for the Sun", id: 1, desc: "Sunblock and hats save the day when Intense Sunlight is needed to fight off bad guys", photoUrl:"http://worldartsme.com/images/small-sun-clipart-1.jpg" },
     { title: 'A Hurt Arm', id: 2 },
     { title: 'Our New Chickens', id: 3 },
     { title: 'Why Does Uncle John Smell Funny?', id: 4 },

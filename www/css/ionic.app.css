@@ -9730,3 +9730,13 @@ a.button {
   opacity: 0;
   -webkit-transition-duration: 0s;
   transition-duration: 0s; }
+
+.my-stories .story-item-image {
+  display: inline;
+  float: left;
+  height: 40px;
+  margin: 0 15px 0 0;
+  border-color: gray; }
+
+.story-page .story-text {
+  padding: 15px; }

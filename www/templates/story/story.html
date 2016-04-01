@@ -1,24 +1,14 @@
 <ion-view view-title="{{params.storyTitle}}">
-  <ion-content>
-    <p>This was option {{params.storyId}}</p>
-    <label class="item item-input">
-      <span class="input-label">main character</span>
-      <input type="text" ng-model="main">
+  <ion-content class='story-page'>
+    <label class="item item-input" ng-repeat="input in storyObj.inputs">
+      <span class="input-label">{{input.title}}</span>
+      <input type="text" ng-model='input.value'>
     </label>
-    <label class="item item-input">
-      <span class="input-label">sub character</span>
-      <input type="text" ng-model="sub">
-    </label>
-    <label class="item item-input">
-      <span class="input-label">superhero</span>
-      <input type="text" ng-model="superhero">
-    </label>
-    <label class="item item-input">
-      <span class="input-label">villian</span>
-      <input type="text" ng-model="villian">
-    </label>
-    <p>
-      the {{main}} was friends with the {{sub}}, who loved the {{superhero}} and fought against the {{villian}}
-    </p>
+    <div class='story-text'>
+      <b style="color:blue">{{storyObj.inputs.main.value}}</b> was friends with the
+      <b style="color:lightblue">{{sub}}</b>,
+      who loved the <b style="color:green">{{superhero}}</b>
+      and fought against the <b style="color:red">{{villian}}</b>
+    </div>
   </ion-content>
 </ion-view>
