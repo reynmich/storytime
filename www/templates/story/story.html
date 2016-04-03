@@ -1,6 +1,6 @@
-<ion-view view-title="{{params.storyTitle}}">
+<ion-view view-title="{{storyObj.title}}">
   <ion-content class='story-page'>
-    <label class="item item-input item-floating-label" ng-repeat="input in inputsObject">
+    <label class="item item-input item-floating-label" ng-repeat="input in storyObj.inputs">
       <span class="input-label">{{input.title}}</span>
       <input type="text" placeholder="{{input.title}}" ng-model='input.value'>
     </label>

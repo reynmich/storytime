@@ -1,17 +1,19 @@
 angular.module('starter.story', [])
 .controller('StoryCtrl', function($scope, $stateParams, $timeout, $compile, StoriesService) {
-  $scope.params = $stateParams;
-  var storyObj = StoriesService.getStories()[0];
-  $scope.inputsObject = storyObj.inputs;
-  var inputsArray = Object.keys(storyObj.inputs);
+  $scope.storyObj = StoriesService.getSingleStory($stateParams.storyId);
+  var inputsArray = Object.keys($scope.storyObj.inputs);
   for (var i = 0, len = inputsArray.length; i < len; i++) {
       var inputRegex = new RegExp('"'+inputsArray[i]+'"','g');
-      storyObj.html = storyObj.html.replace(inputRegex,'"inputsObject.'+inputsArray[i]+'.value"')
+      $scope.storyObj.html = $scope.storyObj.html.replace(inputRegex,'"inputsObject.'+inputsArray[i]+'.value"')
   }
-  // TODO: un-hack this, for now necesarry because angular strips out attributes on span if used in ng-bind-html
+
   $timeout(function(){
+    // TODO: un-hack this
+    // done because angular strips out attributes on span
+    // if used in ng-bind-html -- however, sometimes it
+    // doesn't execute on time
     var storyDiv = document.getElementById('replace-with-html');
-    storyDiv.innerHTML = storyObj.html;
+    storyDiv.innerHTML = $scope.storyObj.html;
     $compile(storyDiv)($scope);
-  })
+  },100)
 });

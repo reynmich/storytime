@@ -1,4 +1,11 @@
 @charset "UTF-8";
+/*
+To customize the look and feel of Ionic, you can override the variables
+in ionic's _variables.scss file.
+*/
+/*
+My Custom
+*/
 /*!
   Ionicons, v2.0.1
   Created by Ben Sperry for the Ionic Framework, http://ionicons.com/
@@ -9715,27 +9722,26 @@ a.button {
   -webkit-transition-duration: 0s;
   transition-duration: 0s; }
 
-/*
-To customize the look and feel of Ionic, you can override the variables
-in ionic's _variables.scss file.
-*/
-/*
-My Custom
-*/
+@font-face {
+  font-family: 'HennyPenny';
+  src: url("../lib/ionic/fonts/HennyPenny-Regular.eot?#iefix") format("embedded-opentype"), url("../lib/ionic/fonts/HennyPenny-Regular.otf") format("opentype"), url("../lib/ionic/fonts/HennyPenny-Regular.woff") format("woff"), url("../lib/ionic/fonts/HennyPenny-Regular.ttf") format("truetype"), url("../lib/ionic/fonts/HennyPenny-Regular.svg#HennyPenny-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 .item-floating-label .input-label {
   -webkit-transition-duration: 0s;
   transition-duration: 0s;
   position: absolute;
   color: #a1a1a1; }
-  .item-floating-label .input-label input {
-    padding-top: 0;
-    margin-top: -1px; }
   .item-floating-label .input-label.has-input {
     font-size: 12px;
     -webkit-transition: top 0.05s linear;
     transition: top 0.05s linear; }
     .item-floating-label .input-label.has-input + input {
       line-height: 45px; }
+  .item-floating-label .input-label input {
+    padding-top: 0;
+    margin-top: -1px; }
 
 .my-stories .story-item-image {
   display: inline;
@@ -9755,3 +9761,15 @@ My Custom
     height: 10px;
     opacity: .3;
     background-color: #a1a1a1; }
+
+.about-page .landing-banner {
+  background-color: #886aea;
+  text-align: center;
+  padding: 30px 0; }
+  .about-page .landing-banner a {
+    color: white; }
+
+.about-page h1 {
+  font-family: "HennyPenny";
+  font-size: 36px;
+  color: white; }

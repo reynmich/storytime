@@ -3,16 +3,16 @@
     @include transition-duration(0s);
     position: absolute;
     color: $grayLight;
-    input{
-      padding-top: 0;
-      margin-top: -1px;
-    }
     &.has-input {
       font-size: 12px;
       @include transition(top 0.05s linear);
       & + input{
         line-height: 45px;
       }
+    }
+    input{
+      padding-top: 0;
+      margin-top: -1px;
     }
   }
 }

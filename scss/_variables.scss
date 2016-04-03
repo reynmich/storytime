@@ -1,3 +1,5 @@
+// The path for our ionicons font files, relative to the built CSS in www/css
+$ionicons-font-path: "../lib/ionic/fonts" !default;
 /*
 To customize the look and feel of Ionic, you can override the variables
 in ionic's _variables.scss file.
@@ -17,3 +19,5 @@ My Custom
 */
 $grayLight:                       #a1a1a1;
 $blue:                            $positive;
+$purple:                            $royal;
+$largestFont:                     "HennyPenny";
