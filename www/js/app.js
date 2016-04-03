@@ -7,7 +7,6 @@
 var app = angular.module('starter', [
   'ionic','ionic.service.core',
   'starter.filters',
-  'starter.directives',
   'starter.menu',
   'starter.myStories',
   'starter.story',
