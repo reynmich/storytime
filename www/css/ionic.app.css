@@ -1,20 +1,4 @@
 @charset "UTF-8";
-/*
-To customize the look and feel of Ionic, you can override the variables
-in ionic's _variables.scss file.
-
-For example, you might change some of the default colors:
-
-$light:                           #fff !default;
-$stable:                          #f8f8f8 !default;
-$positive:                        #387ef5 !default;
-$calm:                            #11c1f3 !default;
-$balanced:                        #33cd5f !default;
-$energized:                       #ffc900 !default;
-$assertive:                       #ef473a !default;
-$royal:                           #886aea !default;
-$dark:                            #444 !default;
-*/
 /*!
   Ionicons, v2.0.1
   Created by Ben Sperry for the Ionic Framework, http://ionicons.com/
@@ -9731,6 +9715,28 @@ a.button {
   -webkit-transition-duration: 0s;
   transition-duration: 0s; }
 
+/*
+To customize the look and feel of Ionic, you can override the variables
+in ionic's _variables.scss file.
+*/
+/*
+My Custom
+*/
+.item-floating-label .input-label {
+  -webkit-transition-duration: 0s;
+  transition-duration: 0s;
+  position: absolute;
+  color: #a1a1a1; }
+  .item-floating-label .input-label input {
+    padding-top: 0;
+    margin-top: -1px; }
+  .item-floating-label .input-label.has-input {
+    font-size: 12px;
+    -webkit-transition: top 0.05s linear;
+    transition: top 0.05s linear; }
+    .item-floating-label .input-label.has-input + input {
+      line-height: 45px; }
+
 .my-stories .story-item-image {
   display: inline;
   float: left;
@@ -9740,3 +9746,12 @@ a.button {
 
 .story-page .story-text {
   padding: 15px; }
+
+.story-page b {
+  color: #387ef5;
+  min-width: 25px;
+  display: inline-block; }
+  .story-page b:empty {
+    height: 10px;
+    opacity: .3;
+    background-color: #a1a1a1; }
