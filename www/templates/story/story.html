@@ -5,10 +5,12 @@
       <input type="text" ng-model='input.value'>
     </label>
     <div class='story-text'>
-      <b style="color:blue">{{storyObj.inputs.main.value}}</b> was friends with the
-      <b style="color:lightblue">{{sub}}</b>,
-      who loved the <b style="color:green">{{superhero}}</b>
-      and fought against the <b style="color:red">{{villian}}</b>
-    </div>
-  </ion-content>
+      <b ng-bind='storyObj.inputs.main.value'></b>
+      <br/><br/><br/>
+      <story atest='attr working'>{{test}}</story>
+      <br>
+      <p ng-bind-html="storyObj.text">
+        {{storyObj.text}}
+      </p>
+    </ion-content>
 </ion-view>

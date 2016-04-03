@@ -4,8 +4,10 @@
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
 // 'starter.controllers' is found in controllers.js
-angular.module('starter', [
+var app = angular.module('starter', [
   'ionic','ionic.service.core',
+  'starter.filters',
+  'starter.directives',
   'starter.menu',
   'starter.myStories',
   'starter.story',
@@ -50,35 +52,15 @@ angular.module('starter', [
       }
     }
   })
-
-  // .state('app.search', {
-  //   url: '/search',
-  //   views: {
-  //     'menuContent': {
-  //       templateUrl: 'templates/search.html'
-  //     }
-  //   }
-  // })
-  //
-  // .state('app.browse', {
-  //     url: '/browse',
-  //     views: {
-  //       'menuContent': {
-  //         templateUrl: 'templates/browse.html'
-  //       }
-  //     }
-  //   })
-    .state('app.myStories', {
-      url: '^/myStories',
-      views: {
-        'menuContent': {
-          templateUrl: 'templates/myStories/myStories.html',
-          controller: 'MyStoriesCtrl'
-        }
+  .state('app.myStories', {
+    url: '^/myStories',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/myStories/myStories.html',
+        controller: 'MyStoriesCtrl'
       }
-    })
-
-
+    }
+  })
   .state('app.single', {
     url: '^/myStories/:storyId/:storyTitle',
     views: {
@@ -89,5 +71,5 @@ angular.module('starter', [
     }
   });
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/about');
+  $urlRouterProvider.otherwise('/myStories');
 });
