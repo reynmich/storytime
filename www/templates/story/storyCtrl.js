@@ -4,7 +4,7 @@ angular.module('starter.story', [])
   var inputsArray = Object.keys($scope.storyObj.inputs);
   for (var i = 0, len = inputsArray.length; i < len; i++) {
       var inputRegex = new RegExp('"'+inputsArray[i]+'"','g');
-      $scope.storyObj.html = $scope.storyObj.html.replace(inputRegex,'"inputsObject.'+inputsArray[i]+'.value"')
+      $scope.storyObj.html = $scope.storyObj.html.replace(inputRegex,'"storyObj.inputs.'+inputsArray[i]+'.value"')
   }
 
   $timeout(function(){
