@@ -34,8 +34,6 @@ var app = angular.module('starter', [
 })
 
 .config(function($stateProvider, $urlRouterProvider, $locationProvider) {
-  // $locationProvider.html5Mode(true);
-
   $stateProvider
   .state('app', {
     url: '^/app',
@@ -71,5 +69,5 @@ var app = angular.module('starter', [
     }
   });
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/myStories');
+  $urlRouterProvider.otherwise('/about');
 });
