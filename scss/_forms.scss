@@ -3,11 +3,12 @@
     @include transition-duration(0s);
     position: absolute;
     color: $grayLight;
-    &.has-input {
+    &.has-input, &:focus {
       font-size: 12px;
       @include transition(top 0.05s linear);
       & + input{
         line-height: 45px;
+        padding-top: 15px;
       }
     }
     input{
