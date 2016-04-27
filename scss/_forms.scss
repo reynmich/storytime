@@ -8,6 +8,7 @@
       @include transition(top 0.05s linear);
       & + input{
         line-height: 45px;
+        height: 45px;
         padding-top: 15px;
       }
     }
