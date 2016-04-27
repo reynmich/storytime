@@ -9738,7 +9738,6 @@ a.button {
     -webkit-transition: top 0.05s linear;
     transition: top 0.05s linear; }
     .item-floating-label .input-label.has-input + input, .item-floating-label .input-label:focus + input {
-      line-height: 45px;
       height: 45px;
       padding-top: 15px; }
   .item-floating-label .input-label input {
