@@ -32,7 +32,7 @@ angular.module('starter.services', [])
           }
         },
         3: {
-            title: "A Special Surprise",
+            title: "A Puppy Surprise",
             desc: "Friends find a new puppy to play with... rabis?",
             photoUrl:"http://t2.uccdn.com/en/images/6/2/1/img_how_much_should_my_labrador_puppy_eat_126_100_square.jpg",
             author: 'Kerry Reynolds',
